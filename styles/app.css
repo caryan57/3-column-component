@@ -1,0 +1,317 @@
+/* RESET CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+/* ******************************************** */
+
+/* CUSTOM CSS */
+
+/* Color Variables*/
+:root {
+  --brightorange: hsl(31, 77%, 52%);
+  --darkcyan: hsl(184, 100%, 22%);
+  --darkercyan: hsl(179, 100%, 13%);
+}
+
+
+/* Body */
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* Color classes */
+.bg-brightorange {
+  background-color: var(--brightorange);
+}
+
+.bg-darkcyan {
+  background-color: var(--darkcyan);
+}
+
+.bg-darkercyan {
+  background-color: var(--darkercyan);
+}
+
+.text-brightorange {
+  color: var(--brightorange);
+}
+
+.text-darkcyan {
+  color: var(--darkcyan);
+}
+
+.text-darkercyan {
+  color: var(--darkercyan);
+}
+
+/* Id Classes */
+
+#sedans-card {
+  border-radius: 10px 0px 0px 10px;
+}
+
+#luxury-card {
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* Services component */
+.services-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 1000px;
+}
+
+/* Card Component */
+.card-component {
+  width: 310px;
+  height: 500px;
+  padding: 40px 50px;
+}
+
+.card-icon {
+  margin-bottom: 2.4em;
+}
+
+.card-title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.9em;
+}
+
+.card-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6em;
+  margin-bottom: 7em;
+}
+
+.card-button button {
+  background-color: hsl(0, 0%, 95%);
+  color: inherit;
+  width: 140px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card-button button:hover {
+  background-color: transparent;
+  border: 1.5px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  transition: 0.3s;
+}
+
+/* Atribution */
+.attribution {
+  text-align: center;
+  font-size: 14px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--darkcyan);
+}
+
+/*MEDIA QUERIES*/
+
+/*Mobile*/
+@media screen and (max-width: 619px) {
+
+  #sedans-card {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  #luxury-card {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .services-component {
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+
+  .card-component {
+    height: 450px;
+    padding: 45px 40px;
+  }
+
+  .card-description {
+    margin-bottom: 3.5em;
+  }
+
+  .attribution {
+    margin-bottom: 40px;
+    font-size: 12px;
+  }
+}
+
+/*Tablet*/
+@media screen and (min-width: 620px) and (max-width: 929px) {
+
+  #suvs-card {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  #luxury-card {
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .services-component {
+    height: auto;
+    margin: 50px 0;
+  }
+
+  .attribution {
+    margin-bottom: 40px;
+    font-size: 12px;
+  }
+}
