@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![sreenshot](https://github.com/caryan57/3-column-component/blob/main/images/screenshot.png)
 
 ## My process
 
